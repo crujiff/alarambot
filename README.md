@@ -1,7 +1,6 @@
 # Alarmbot
 A script that monitors machine and send alert through telegram
-## Prerequisites
-1. Passwordless ssh from monitoring machine and machine to monitor </br>
+## Passwordless ssh
 **How to do this**</br>
 From monitoring machine:</br>
 ```
@@ -16,4 +15,4 @@ chmod go-w ~/
 chmod 700 ~/.ssh
 chmod 600 ~/.ssh/authorized_keys
 ```
-2. Create Telegram Bot
+##Create Telegram Bot
