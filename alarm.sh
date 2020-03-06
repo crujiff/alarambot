@@ -50,7 +50,6 @@ function check_ram(){
         total_mem=$(echo ${mem_info} | awk '{print $2}')
         free_mem=$(echo ${mem_info} | awk '{print $5}')
         free_perc=$((100*free_mem/total_mem))
-        echo "free ram is: "${free_perc}
         if [[ ${free_ram_perc} -gt ${free_perc} ]]
         then
                 ret_ram=1
@@ -61,7 +60,6 @@ function check_cpu(){
         ret_cpu=0
         cpu_info=$(ssh -n ${user}@${machine} "vmstat | tail -1")
         free_cpu=$(echo ${cpu_info} | awk '{print $15}')
-        echo "free cpu is: "${free_cpu}
         if [[ ${free_cpu_perc} -gt ${free_cpu} ]]
         then
                 ret_cpu=1
