@@ -16,3 +16,4 @@ chmod go-w ~/
 chmod 700 ~/.ssh
 chmod 600 ~/.ssh/authorized_keys
 ```
+2. Create Telegram Bot
