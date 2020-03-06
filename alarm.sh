@@ -110,8 +110,8 @@ function send_alert(){
 cat ${basedi}r/hostname.txt | while read line
 do
         echo $line
+	get_variables
         check_variables
-        get_variables
         if [[ ${check_var} -eq 0 ]]
         then
                 >${basedir}/log.txt
