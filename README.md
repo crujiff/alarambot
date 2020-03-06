@@ -17,3 +17,4 @@ A script that monitors machine and send alert through telegram
   chmod 600 ~/.ssh/authorized_keys
   ```
 2. Create Telegram Bot
+Follow the [official documentation]  (https://core.telegram.org/bots#6-botfather)
