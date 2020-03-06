@@ -1,4 +1,9 @@
 # Alarmbot
-a script that monitors machine and send alert through telegram
+A script that monitors machine and send alert through telegram
 ## Prerequisites
-passwordless ssh from monitoring machine and machine to monitor
+Passwordless ssh from monitoring machine and machine to monitor
+###How to do this
+From monitoring machine:
+ssh-keygen -t rsa
+ssh **monitor_user**@**machine_to_monitor** mkdir -p .ssh
+cat .ssh/id_rsa.pub | ssh **monitor_user**@**machine_to_monitor** 'cat >> .ssh/authorized_keys'
