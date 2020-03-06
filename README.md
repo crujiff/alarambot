@@ -9,7 +9,7 @@ A script that monitors machine and send alert through telegram
   ssh monitor_user@machine_to_monitor mkdir -p .ssh
   cat .ssh/id_rsa.pub | ssh monitor_user@machine_to_monitor 'cat >> .ssh/authorized_keys'
   ```
-    On machine to monitor
+  On machine to monitor
   ```
   ssh monitor_user@machine_to_monitor
   chmod go-w ~/
