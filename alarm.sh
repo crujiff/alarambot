@@ -79,15 +79,15 @@ function check_fs(){
 function report(){
         if [[ ${ret_ram} -eq 1 ]]
         then
-                echo "Free ram percentage is: " ${free_perc} >>${basedir}/log.txt
+                echo "Free ram percentage of ${machine} is: " ${free_perc} >>${basedir}/log.txt
         fi
         if [[ ${ret_cpu} -eq 1 ]]
         then
-                echo "Free cpu percentage is: " ${free_cpu} >>${basedir}/log.txt
+                echo "Free cpu percentage of ${machine} is: " ${free_cpu} >>${basedir}/log.txt
         fi
         if [[ ${ret_fs} -eq 1 ]]
         then
-                echo "Full filesystems are: " ${fs_info} >>${basedir}/log.txt
+                echo "Full filesystems of ${machine} are: " ${fs_info} >>${basedir}/log.txt
         fi
 }
 
